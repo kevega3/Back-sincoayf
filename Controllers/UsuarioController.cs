@@ -9,10 +9,10 @@ namespace Back_sincoayf.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class UsuariosController : Controller
+    public class UsuarioController : Controller
     {
         private readonly VehiculosDbContext context;
-        public UsuariosController(VehiculosDbContext context)
+        public UsuarioController(VehiculosDbContext context)
         {
             this.context = context;
         }

@@ -87,7 +87,7 @@ namespace Back_sincoayf.Controllers
                 // ExecuteSqlRawAsync es funcional cuando se ejecuta algun query que no se necesita mapear con alguna entidad
                 var parameters = new[]
                   {
-                    new SqlParameter("@tipo", vehiculo.Tipo),
+                    new SqlParameter("tipo", vehiculo.Tipo),
                     new SqlParameter("modelo", vehiculo.Modelo),
                     new SqlParameter("cilindraje", vehiculo.Cilindraje),
                     new SqlParameter("numeroVelocidades", vehiculo.NumeroVelocidades),
@@ -151,10 +151,10 @@ namespace Back_sincoayf.Controllers
                     new SqlParameter("valor", vehiculo.Valor),
                     new SqlParameter("Imagen", vehiculo.Imagen),
                     new SqlParameter("Estado", vehiculo.Estado),
-                    new SqlParameter("idVehiculo", vehiculo.VehiculoID)
+                    new SqlParameter("VehiculoID", vehiculo.VehiculoID)
                 };
 
-                await context.Database.ExecuteSqlRawAsync("exec editarVehiculo @tipo, @modelo, @cilindraje, @numeroVelocidades, @color, @kilometraje, @valor, @Imagen, @Estado,@idVehiculo", parameters);
+                await context.Database.ExecuteSqlRawAsync("exec editarVehiculo @tipo, @modelo, @cilindraje, @numeroVelocidades, @color, @kilometraje, @valor, @Imagen, @Estado,@VehiculoID", parameters);
 
 
                 response.Ayuda = "Se edito con Exito";
