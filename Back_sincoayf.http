@@ -1,0 +1,6 @@
+@Back_sincoayf_HostAddress = http://localhost:5030
+
+GET {{Back_sincoayf_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

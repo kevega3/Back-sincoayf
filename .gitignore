@@ -1,0 +1,72 @@
+# Archivos de sistema
+[Dd]ebug/
+[Rr]elease/
+[Bb]uild/
+x64/
+x86/
+*.log
+*.user
+*.lock
+*.DS_Store
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Configuración de Visual Studio y Rider
+.vscode/
+.vs/
+.idea/
+
+# Paquetes NuGet
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.vsix
+*.psess
+
+# Archivos de configuración y de usuario
+*.swp
+*.pidb
+*.booproj
+*.pidb.meta
+*.csproj.user
+*.dbmdl
+*.sln.docstates
+
+# Archivos de configuración de dependencias
+node_modules/
+packages/
+package-lock.json
+*.log
+
+# Archivos de publicación y despliegue
+publish/
+publishProfiles/
+
+# Archivos temporales, caché y de índices
+bin/
+obj/
+*.cache
+*.seed
+*.log
+
+# Archivos de configuración de Azure
+.azure/
+
+# Certificados de depuración y llaves de usuario
+*.pfx
+*.p12
+appsettings.*.json
+secrets.json
+
+# Archivos de despliegue locales y de CI/CD
+Dockerfile
+docker-compose.yml
+.dockerignore
+*.template
+.env
+
+# Ignorar las carpetas para recursos específicos de proyectos .NET
+Generated_Code/
